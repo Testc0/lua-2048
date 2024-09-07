@@ -10,7 +10,7 @@ local tile_textures = {}
 function love.load()
   local i = 2
   while i <= 2048 do
-    tile_textures[i] = love.graphics.newImage("textures/"..i..".png")
+    tile_textures[i] = love.graphics.newImage(i..".png")
     i = i * 2
   end
   loadGame()
